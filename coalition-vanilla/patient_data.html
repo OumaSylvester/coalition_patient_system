@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="keywords" content="Patient data, Patients">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="patient_data.css">
+
+        <title>2024 FED Skills Test</title>
+    </head>
+    <body>
+        <div class="container-fluid bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white small rounded-pill ">
+                <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col-3">
+                        <a class="navbar-brand" href="#"><img src="assets/TestLogo.svg" alt="TestLogo"></a>
+                    </div>
+                    <div class="col-6">                        
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/home.svg" class="mx-1" alt="Overview">Overview </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link  active" href="#"><img src="assets/group.svg" class="mx-1" alt="Patients">Patients <span class="sr-only">(current)</span></a>
+                              </li>                             
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="assets/calendar.svg" class="mx-1" alt="Schedule"> Schedule</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="assets/chat_bubble.svg" class="mx-1" alt="Chat">Message</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="assets/credit_card.svg" class="mx-1" alt="Patients">Transactions</a>
+                              </li>
+                            </ul>
+                    </div>
+                    <div class="col-3 navbar-nav ">
+                        <div class="media nav-item pr-3">
+                            <img src="assets/senior-woman-doctor.png" alt="Dr. John Doe" class="mr-3">
+                            <div class="media-body">
+                              <p class="mt-1 font-weight-bold small pb-0  mb-0">Dr. Jose Simmons</p>
+                              <span class="small">General Practitioner</span>
+                            </div>
+                        </div>
+                        <div class="btn-group nav-item border-left " role="group" aria-label="Basic example">
+                            <a class="btn pr-0" href="#" role="button" aria-disabled="true"><img src="assets/settings.svg" alt="Settings"></a>
+                            <a class="btn" href="#"  role="button" aria-disabled="true"><img src="assets/more_vert.svg" alt="More"></a>
+                        </div>
+                    </div>
+                </div>                       
+              </nav>
+              <div class="row">
+                <div class="col-3">
+                    <div class="row">
+                       <h2 class="h2 col-10">Patients</h2>
+                       <div class="col-2">
+                            <img src="assets/search_FILL0_wght300_GRAD0_opsz24.svg" alt="Search" class="">
+                       </div>
+                    </div>
+
+                    <div class="row" id="patients">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="media nav-item pr-3">
+                                    <img src="assets/senior-woman-doctor.png" alt="Dr. John Doe" class="mr-3">
+                                    <div class="media-body">
+                                      <p class="mt-1 font-weight-bold small pb-0  mb-0">Dr. Jose Simmons</p>
+                                      <span class="small">General Practitioner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <a class="btn" href="#"  role="button" aria-disabled="true"><img src="assets/more_horiz.svg" alt="More"></a>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="media nav-item pr-3">
+                                    <img src="assets/senior-woman-doctor.png" alt="Dr. John Doe" class="mr-3">
+                                    <div class="media-body">
+                                      <p class="mt-1 font-weight-bold small pb-0  mb-0">Dr. Jose Simmons</p>
+                                      <span class="small">General Practitioner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <a class="btn" href="#"  role="button" aria-disabled="true"><img src="assets/more_horiz.svg" alt="More"></a>
+                            </div>
+                        </div>   
+                    </div>
+                                       
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <h2 class="h2">Diagnosis History</h2>
+                        <div class="row">                          
+                            <canvas id="diagnosisChart">
+
+                            </canvas>                           
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 card">
+                            <img src="assets/respiratory rate.svg" alt="respiratory rate" class="mr-3">
+                            <h5>Respiratory Rate</h5>
+                            <p>90 bpm</p>
+                            <p>Normal</p>
+                        </div>
+                        <div class="col-4 card">
+                            <img src="assets/temperature.svg" alt="Temperature" class="">
+                            <h5>Temperature</h5>
+                            <p>98.6<sup>o</sup>F</p>
+                            <p>Normal</p>
+                        </div>
+                        <div class="col-4 card">
+                            <img src="assets/HeartBPM.svg" alt="Heart Beat Rate" class="">
+                            <h5>Heart Rate</h5>
+                            <p>78 bpm</p>
+                            <div class="media">
+                                <img src="assets/ArrowDown.svg" alt="Heart Beat Rate" class="">
+                                <p>Lower Than Average</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Diagnostic List</h2>
+                        <div class="table table-stripped">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col card">
+                            <img src="assets/Layer 2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Jessica Taylor</h5>
+                                <div id="">
+                                    <div class="media">
+                                        <img src="assets/calendar.svg" alt="Date of birth" class="mr-3">
+                                        <div class="media-body">
+                                            <p class="mt-1 font-weight-bold small pb-0  mb-0">Date of birth</p>
+                                            <span class="small">Argust 20, 1996</span>
+                                        </div>
+                                     </div>
+                                     <div class="media">
+                                        <img src="assets/FemaleIcon.svg" alt="Date of birth" class="mr-3">
+                                        <div class="media-body">
+                                            <p class="mt-1 font-weight-bold small pb-0  mb-0">Gender</p>
+                                            <span class="small">Female</span>
+                                        </div>
+                                     </div>
+                                     <div class="media">
+                                        <img src="assets/PhoneIcon.svg" alt="Date of birth" class="mr-3">
+                                        <div class="media-body">
+                                            <p class="mt-1 font-weight-bold small pb-0  mb-0">Contact Info</p>
+                                            <span class="small">(455-555555555)</span>
+                                        </div>
+                                     </div>
+                                     <div class="media">
+                                        <img src="assets/PhoneIcon.svg" alt="Date of birth" class="mr-3">
+                                        <div class="media-body">
+                                            <p class="mt-1 font-weight-bold small pb-0  mb-0">Emergency Contact</p>
+                                            <span class="small">(455) 666666666</span>
+                                        </div>
+                                     </div>
+                                     <div class="media">
+                                        <img src="assets/InsuranceIcon.svg" alt="Date of birth" class="mr-3">
+                                        <div class="media-body">
+                                            <p class="mt-1 font-weight-bold small pb-0  mb-0">Insurance provider</p>
+                                            <span class="small">Jammi</span>
+                                        </div>
+                                     </div>
+                                </div>
+                             
+                              <p class="card-text"></p>
+                              <a href="#" class="btn btn-primary rounded-pill">Show All Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card">
+                        <h2 class="h2">Lab Results</h2>
+                        <div class="row">
+                            <div class="col-10">Blodd Results</div>
+                            <div class="col-2"><img src="assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt="Download"></div>
+                        </div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="patient_data.js"></script>
+    </body> 
+</html>
